@@ -65,5 +65,6 @@ func calculateSquareArea(x int, y int) {
 
 	fmt.Println(l)
 	fmt.Println("chbhbvhbcvhbvbhvsc")
+	fmt.Println()
 
 }
