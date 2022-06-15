@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
-const appleOne float64 = 5.99
+var appleOne float64 = 5.99
 
-const peareOne int = 7
-const myMoney int = 23
+var peareOne int = 7
+
+var myMoney int = 23
 
 func main() {
 	firstQuestion(peareOne, appleOne)
@@ -30,12 +31,14 @@ func secondQuestion(peareOne int, myMoney int) {
 
 func thirdQuestion(appleOne float64, myMoney int) {
 	fmt.Println("Скільки яблук ми можемо купити?")
-	fmt.Println("Мы можем купить такое кол-во яблок", myMoney/int(appleOne))
+	fmt.Println("Мы можем купить такое кол-во яблок", float64(myMoney)/float64(appleOne))
 
 }
 
 func fourthQuestion(peareOne int, appleOne float64) {
 	fmt.Println("Чи ми можемо купити 2 груші та 2 яблука?")
-	fmt.Println("Мы не можем купить такое кол-во груш и яблок", peareOne+peareOne+int(appleOne)+int(appleOne))
+	fmt.Println("Стоимость двух груш ", peareOne+peareOne)
+	fmt.Println("Стоимость двух яблок ", appleOne+appleOne)
+	fmt.Println("Мы не можем купить 2 груши и 2 яблока")
 
 }
