@@ -64,6 +64,6 @@ func calculateSquareArea(x int, y int) {
 	var l = x * y
 
 	fmt.Println(l)
-	fmt.Println()
+
 
 }
